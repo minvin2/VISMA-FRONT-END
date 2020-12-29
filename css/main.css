@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+body {
+  font-family: 'Righteous', cursive;
+  margin: 0;
+}
+
+.buttonAdd {
+  background-color: #000000;
+  border-radius: 6px;
+  border: 1px solid #000000;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: .2em 2em;
+  margin-top: 0.5em;
+  text-decoration: none;
+}
+
+.buttonAdd:hover {
+  background-color: #ffffff;
+  color: black;
+}
+
+.buttonAdd:active, .deleteBtn:active {
+  position: relative;
+  top: 1px;
+}
+
+.deleteBtn:hover {
+  background-color: #c00000;
+}
+
+.deleteBtn {
+  background-color: #000000;
+  border-radius: 6px;
+  border: 1px solid #000000;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 0.2em 0.5em;
+  text-decoration: none;
+}
+
+.picture img {
+  width: 100%;
+}
+
+.slider img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+}
+
+.slider h1 {
+  text-align: center;
+  font-size: 4em;
+  background-color: #e8013f;
+  border-radius: 5px;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+.inputs {
+  text-align: center;
+  padding-top: 1em;
+}
+
+input {
+  font-size: 1.5em;
+  margin: 0.6em;
+  border-radius: 4px;
+  width: 300px;
+  -webkit-transition: width .35s ease-in-out;
+  transition: width .35s ease-in-out;
+}
+
+input[type=text]:focus {
+  width: 350px;
+}
+
+.slide {
+  animation-duration: 2s;
+  animation-name: slidein;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+  to {
+    margin-left: 30%;
+    margin-right: 30%;
+  }
+}
+
+.inputs label {
+  font-size: 1.5em;
+}
+
+.list_table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table, th, td {
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  text-transform: capitalize;
+}
+
+th {
+  background-color: #e8013f;
+  font-size: 1.5em;
+}
+
+td:first-child {
+  width: 150px;
+}
+
+.lineThrough {
+  text-decoration: line-through;
+  color: brown;
+}
+
+.checked-no {
+  width: 20px;
+}
+
+.checked-yes {
+  width: 20px;
+}
+
+input[type=checkbox] {
+  position: relative;
+  cursor: pointer;
+}
+
+input[type=checkbox]:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: -2px;
+  left: 0;
+  border: 2px solid #555555;
+  border-radius: 3px;
+  background-color: white;
+}
+
+input[type=checkbox]:checked:after {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 10px;
+  border: solid rgb(245, 10, 10);
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  top: 0px;
+  left: 6px;
+}

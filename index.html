@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/main.css">
+    <title>Winter internship</title>
+</head>
+
+<body>
+
+    <div class="slider">
+        <img src="images/Visma_small2.png" alt="Visma logo">
+        <h1 class="slide">To Do List</h1>
+    </div>
+
+    <div class="inputs">
+        <label for="description">Description:</label> <br>
+        <input type="text" id="description" maxlength="120" required> <br>
+        <label for="deadline">Deadline:</label><br>
+        <input type="datetime-local" id="deadline" name="deadline-time"> <br>
+        <button type="button" class="buttonAdd" onclick="buttonAdd()">Add</button>
+        <p id="demo"></p>
+    </div>
+
+    <div class="table" id="show">
+        <table class="list_table" id="all_notes">
+            <thead>
+                <tr>
+                    <th>Description</th>
+                    <th>Timeleft</th>
+                    <th>Delete</th>
+                    <th>Done</th>
+                </tr>
+            </thead>
+        </table>
+
+    </div>
+
+    
+    <div class="slider">
+        <h1 class="slide">Good luck!</h1>
+    </div>
+
+    <div class="picture">
+        <img src="images/background1.jpg" alt="Santa">
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
